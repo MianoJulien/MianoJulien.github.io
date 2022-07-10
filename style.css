@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "a b" "c d" "e f" "g h" "i j";
+  grid-template-areas: "pre b" "pro d" "int f" "lan h" "com j";
 }
 
 ul {
@@ -19,26 +19,49 @@ ul {
 
 img {
   border-radius: 150px;
+  border: 3px solid white;
 }
 
 .presentation {
-  grid-area: a;
+  grid-area: pre;
   text-align: center;
   padding: 20px;
-  background: rgb(1, 104, 1);
+  background: rgba(1, 63, 1, 0.732);
   color: white;
 }
 
+.freelance {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
 .profil {
-  grid-area: c;
+  grid-area: pro;
   margin: 25px 0 0 25px;
 }
 
 h2 {
   text-transform: uppercase;
   padding: 20px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.459);
 }
 
 h2::after {
   border-width: 2px solid black 80%;
+}
+
+.interet {
+  grid-area: int;
+  margin: 25px 0 0 25px;
+}
+
+.langue {
+  grid-area: lan;
+  margin: 25px 0 0 25px;
+}
+
+.competence {
+  grid-area: com;
+  margin: 25px 0 0 25px;
 }
