@@ -6,15 +6,16 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "pre b" "pro d" "int f" "lan h" "com j";
+  grid-template-areas: "pre for" "pro exp" "int exp" "lan exp" "com exp";
 }
 
 ul {
   list-style: none;
   padding: 20px;
   line-height: 30px;
+  font-size: 1.2rem;
 }
 
 img {
@@ -28,6 +29,7 @@ img {
   padding: 20px;
   background: rgba(1, 63, 1, 0.732);
   color: white;
+  max-width: 300px;
 }
 
 .freelance {
@@ -64,4 +66,22 @@ h2::after {
 .competence {
   grid-area: com;
   margin: 25px 0 0 25px;
+}
+
+.formation {
+  grid-area: for;
+  margin-left: 20px;
+}
+
+.experience {
+  grid-area: exp;
+  margin-left: 20px;
+}
+
+h3 {
+  margin-left: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  font-size: 1.8rem;
 }
