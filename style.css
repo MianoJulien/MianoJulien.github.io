@@ -5,17 +5,18 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-h1 {
-  position: absolute;
-  margin-top: 20px;
-  right: 300px;
-  letter-spacing: 2px;
+img {
+  border-radius: 150px;
 }
 
-ul {
-  list-style: none;
-  padding: 100px 0px 0px 20px;
-  font-size: 1.2rem;
+.presentation {
+  text-align: center;
+  padding: 20px;
+  background: rgb(1, 104, 1);
+  color: white;
 }
