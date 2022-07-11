@@ -28,8 +28,10 @@ img {
   text-align: center;
   padding: 20px;
   background: rgba(1, 63, 1, 0.732);
+  margin: 20px;
   color: white;
   max-width: 300px;
+  max-height: 300px;
 }
 
 .freelance {
@@ -70,12 +72,16 @@ h2::after {
 
 .formation {
   grid-area: for;
-  margin-left: 20px;
+  margin: 150px 0 0 20px;
+}
+
+.formation-liste {
+  line-height: 40px;
 }
 
 .experience {
   grid-area: exp;
-  margin-left: 20px;
+  margin: 150px 0 0 20px;
 }
 
 h3 {
@@ -84,4 +90,15 @@ h3 {
   letter-spacing: 2px;
   margin-top: 20px;
   font-size: 1.8rem;
+}
+
+.experience-liste {
+  list-style: circle;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 806px) {
+  body {
+    display: block;
+  }
 }
