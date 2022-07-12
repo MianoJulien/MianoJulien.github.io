@@ -9,6 +9,9 @@ body {
   grid-template-columns: 40% 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "pre for" "pro exp" "int exp" "lan exp" "com exp";
+  border: 3px solid rgba(0, 0, 0, 0.377);
+  border-radius: 10px;
+  margin: 10px;
 }
 
 ul {
@@ -53,10 +56,6 @@ h2 {
   padding: 20px;
   letter-spacing: 2px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.459);
-}
-
-h2::after {
-  border-width: 2px solid black 80%;
 }
 
 .interet {
