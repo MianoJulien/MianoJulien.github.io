@@ -30,3 +30,15 @@ img {
   border-radius: 3000px;
   height: 150px;
 }
+
+.maintenance {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 240, 76);
+}
