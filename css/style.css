@@ -11,13 +11,14 @@
   src: url(./assets/fonts/Bellyn.woff);
 }
 
-body {
+.body {
   background: rgb(31, 37, 45);
 }
 
-h1 {
-  font-family: "Bellyn";
+.header__title {
+  font-family: Bellyn, sans-serif;
   font-weight: 100;
+  font-size: 3.5em;
   color: rgb(40, 208, 126);
   min-width: 100%;
   margin: 20px 0;
@@ -29,11 +30,12 @@ h1 {
   min-width: 100%;
 }
 
-img {
+.header__image {
   display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
   margin: 20px auto;
-  border-radius: 3000px;
-  height: 150px;
 }
 
 .maintenance {
@@ -41,9 +43,10 @@ img {
   min-height: 100%;
 }
 
-h2 {
-  font-family: "Bellyn";
+.maintenance__title {
+  font-family: Bellyn, sans-serif;
   font-weight: 100;
+  font-size: 2em;
   text-align: center;
   align-items: center;
   justify-content: center;
