@@ -18,7 +18,7 @@
 .header {
   display: flex;
   width: 100vw;
-  border-bottom: 2px solid rgb(120, 204, 163);
+  border-bottom: 2px solid rgba(57, 125, 148, 1);
 }
 
 .header__title {
@@ -27,23 +27,33 @@
   font-size: 3.5em;
   letter-spacing: 3px;
   text-align: center;
-  color: rgb(120, 204, 163);
-  background: rgb(52, 68, 87);
+  color: #daa520;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(57, 125, 148, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
-.header__title--all-projects {
+.header__title--pages {
   min-width: 100%;
   padding: 10px;
   font-family: Bellyn, sans-serif;
   font-size: 3.5em;
   letter-spacing: 3px;
   text-align: center;
-  color: rgb(120, 204, 163);
-  background: rgb(52, 68, 87);
+  color: #daa520;
+  background: linear-gradient(
+    10deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(57, 125, 148, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .header__title span {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .nav-bar {
@@ -51,8 +61,12 @@
   width: 100%;
   align-items: center;
   justify-content: flex-end;
-  border-left: 2px dashed rgb(120, 204, 163);
-  background: rgb(52, 68, 87);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(57, 125, 148, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 .nav-bar-container {
   width: 100%;
@@ -61,16 +75,17 @@
   justify-content: space-around;
 }
 .nav-bar-link {
-  color: white;
+  color: #daa520;
+  font-weight: bold;
   font-size: 1.2em;
+  text-transform: uppercase;
   text-decoration: none;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
 }
 
 .nav-bar-link:hover {
-  color: rgb(120, 204, 163);
-  transform: scale(1.2);
+  color: #fafad2;
 }
 
 .maintenance {
