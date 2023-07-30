@@ -12,33 +12,69 @@
 }
 
 .body {
-  background: rgb(31, 37, 45);
+  background: rgb(60, 80, 105);
+}
+
+.header {
+  display: flex;
+  width: 100vw;
+  border-bottom: 2px solid rgb(120, 204, 163);
 }
 
 .header__title {
+  min-width: 50%;
   font-family: Bellyn, sans-serif;
-  font-weight: 100;
   font-size: 3.5em;
-  color: rgb(40, 208, 126);
-  min-width: 100%;
-  margin: 20px 0;
-  text-align: center;
   letter-spacing: 3px;
+  text-align: center;
+  color: rgb(120, 204, 163);
+  background: rgb(52, 68, 87);
 }
 
-.img-profil {
+.header__title--all-projects {
   min-width: 100%;
+  padding: 10px;
+  font-family: Bellyn, sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgb(120, 204, 163);
+  background: rgb(52, 68, 87);
 }
 
-.header__image {
-  display: block;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin: 20px auto;
+.header__title span {
+  font-size: 1.5em;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  border-left: 2px dashed rgb(120, 204, 163);
+  background: rgb(52, 68, 87);
+}
+.nav-bar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav-bar-link {
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-bar-link:hover {
+  color: rgb(120, 204, 163);
+  transform: scale(1.2);
 }
 
 .maintenance {
+  display: none;
   min-width: 100%;
   min-height: 100%;
 }
