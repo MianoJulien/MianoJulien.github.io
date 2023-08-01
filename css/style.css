@@ -6,54 +6,28 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Bellyn";
-  src: url(./assets/fonts/Bellyn.woff);
-}
-
 .body {
   background: rgb(60, 80, 105);
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
   display: flex;
   width: 100vw;
-  border-bottom: 2px solid rgba(57, 125, 148, 1);
+  margin-top: 10px;
 }
 
 .header__title {
   min-width: 50%;
   font-family: Bellyn, sans-serif;
-  font-size: 3.5em;
+  font-size: 2.2em;
   letter-spacing: 3px;
   text-align: center;
-  color: #daa520;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(57, 125, 148, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
-
-.header__title--pages {
-  min-width: 100%;
-  padding: 10px;
-  font-family: Bellyn, sans-serif;
-  font-size: 3.5em;
-  letter-spacing: 3px;
-  text-align: center;
-  color: #daa520;
-  background: linear-gradient(
-    10deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(57, 125, 148, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  color: rgb(255, 255, 255);
 }
 
 .header__title span {
-  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .nav-bar {
@@ -61,12 +35,6 @@
   width: 100%;
   align-items: center;
   justify-content: flex-end;
-  background: linear-gradient(
-    270deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(57, 125, 148, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
 }
 .nav-bar-container {
   width: 100%;
@@ -75,35 +43,36 @@
   justify-content: space-around;
 }
 .nav-bar-link {
-  color: #daa520;
+  color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 1.2em;
-  text-transform: uppercase;
+  font-size: 1.1em;
   text-decoration: none;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
 }
 
 .nav-bar-link:hover {
-  color: #fafad2;
+  color: rgb(100, 244, 172);
 }
 
-.maintenance {
-  display: none;
-  min-width: 100%;
-  min-height: 100%;
+.service {
+  margin: 20px;
 }
 
-.maintenance__title {
-  font-family: Bellyn, sans-serif;
-  font-weight: 100;
+.service__title {
   font-size: 2em;
+  max-width: 200px;
+  padding: 5px;
+  margin: 0 auto;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 240, 76);
+  color: rgb(51, 51, 51);
+  background: rgb(100, 244, 172);
+  border-radius: 3px;
+  box-shadow: 0px 0px 20px 4px rgba(36, 36, 36, 0.534);
 }
 
-i {
-  color: rgb(255, 240, 76);
+.service__text {
+  color: rgb(255, 255, 255);
+  margin: 20px;
+  line-height: 1.2em;
 }
