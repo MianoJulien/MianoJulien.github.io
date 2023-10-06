@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 ::before,
 ::after {
@@ -8,6 +9,7 @@
 
 body {
   background: #fff;
+  font-family: "Playfair Display", serif;
 }
 
 nav.navbar {
@@ -16,23 +18,37 @@ nav.navbar {
   height: 100%;
   margin: 0 auto;
   padding: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.507);
 }
 
-ul.link {
-  width: 80vw;
+h1 {
+  width: 40vw;
   margin-top: 10px;
+  padding: 5px;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.navbar-right {
+  max-width: 100%;
+  height: 100%;
+  margin-top: 20px;
   display: flex;
   justify-content: flex-end;
 }
 
+ul.link {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+
 ul.link a {
   color: black;
-  text-decoration: none;
 }
 
 ul.link a li {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-right: 20px;
   padding: 5px;
@@ -40,14 +56,46 @@ ul.link a li {
 
 ul.reseau {
   width: 20vw;
-  margin-top: 10px;
   display: flex;
 }
 
 ul.reseau a {
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 50%;
   padding: 5px;
   margin-right: 10px;
   color: black;
+  background: rgb(241, 236, 236);
+}
+
+.box {
+  display: flex;
+}
+
+.left-box,
+.right-box {
+  margin: 10px;
+  width: 50vw;
+  height: 80vh;
+}
+
+.left-box {
+  border-right: 1px solid rgba(128, 128, 128, 0.514);
+}
+
+@media (max-width: 685px) {
+  ul.reseau {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  ul.link {
+    display: none;
+  }
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }
