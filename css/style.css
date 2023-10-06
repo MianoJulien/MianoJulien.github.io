@@ -27,6 +27,7 @@ h1 {
   padding: 5px;
   font-size: 2rem;
   font-style: italic;
+  letter-spacing: 1px;
 }
 
 .navbar-right {
@@ -41,11 +42,12 @@ ul.link {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 ul.link a {
   color: black;
+  font-family: "Playfair Display", serif;
 }
 
 ul.link a li {
@@ -76,26 +78,54 @@ ul.reseau a {
 .right-box {
   margin: 10px;
   width: 50vw;
-  height: 80vh;
+  height: 200vh;
 }
 
 .left-box {
   border-right: 1px solid rgba(128, 128, 128, 0.514);
 }
 
-@media (max-width: 685px) {
+.presentation-title {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.text-presentation {
+  text-align: justify;
+  margin: 0 20px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 740px) {
   ul.reseau {
     display: none;
   }
+  .left-box {
+    border-right: none;
+  }
+  .box {
+    display: block;
+  }
+  .left-box,
+  .right-box {
+    width: 90vw;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+  .text-presentation {
+    font-size: 0.8rem;
+  }
 }
-@media (max-width: 560px) {
+@media (max-width: 630px) {
   ul.link {
     display: none;
   }
   h1 {
     margin: 0 auto;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
 }
